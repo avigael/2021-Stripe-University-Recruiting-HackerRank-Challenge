@@ -1,3 +1,5 @@
+// Stripe HackerRank Challenge 2021
+
 func cleanUpMessage(_ id: String, _ message: String) -> String {
     // add merchant_id to front of message
     var finalMessage = id
@@ -35,7 +37,7 @@ func verify_merchants(_ provided_fields: [String]) {
             count += 1
         }
     }
-    // stores the message we will print
+    // CREATE OUTPUT MESSAGE
     var message = ""
     // loop through merchants
     for member in group {
@@ -106,6 +108,9 @@ func verify_merchants(_ provided_fields: [String]) {
 }
 
 verify_merchants([
+    "acct_123,tax_id_number,123456789",
+    "acct_123,country,FR",
+    "acct_123,business_type,company",
     "acct_456,business_type,individual",
     "acct_456,country,JP",
     "acct_456,first_name,Mei",
